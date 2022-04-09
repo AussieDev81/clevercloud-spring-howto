@@ -1,0 +1,22 @@
+### Production Profile ###
+
+
+spring:
+  profiles:
+    profile-name: prod
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    database:
+      name: bw1exz6gwekhoa5fz7kd
+      host: bw1exz6gwekhoa5fz7kd-mysql.services.clever-cloud.com
+      port: 3306
+    url:  jdbc:mysql://${spring.datasource.database.host}:${spring.datasource.database.port}/${spring.datasource.database.name}
+    username: uuzdkgfet6rhhxxi
+    password: DMGmgOqJoYXFRFjjJgkG
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+hibernate:
+  format_sql: true

@@ -1,0 +1,15 @@
+### Main Application Settings ###
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: CleverCloud Spring Howto
+    path:
+      api-root: api
+      version: 1
+      base-url: ${spring.application.path.api-root}/v${spring.application.path.version}
+  profiles:
+    active: dev
+
